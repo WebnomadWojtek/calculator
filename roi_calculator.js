@@ -108,7 +108,10 @@ function performCalculation() {
         $('#first-panel').css('opacity', 0);
         setTimeout(function() {
             $('#first-panel').css('visibility', 'hidden');
+            $('#first-panel').css('height', '0px');
             $('#second-panel').css('visibility', 'visible').css('opacity', 1);
+            $('#second-panel').css('height', 'auto').css('opacity', 1);
+
         }, 200);
 
         initializeDefaultSliderValues(parseFloat(ticketVolumeValue));
